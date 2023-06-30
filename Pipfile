@@ -3,6 +3,16 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[[source]]
+url = "https://oauth2accesstoken@privatepypi"
+verify_ssl = true
+name = "gar"
+
+[pipenv]
+disable_pip_input = true
+# https://github.com/pypa/pipenv/issues/5041
+install_search_all_sources = true
+
 [packages]
 pipenvtest = { editable = true, path = "." }
 
@@ -18,7 +28,6 @@ twine = ">3"
 
 [requires]
 python_version = "3.11.4"
-
 #######
 ### Custom Pipfile Directives
 #######

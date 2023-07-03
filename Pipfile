@@ -3,6 +3,9 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[pipenv]
+venv_in_project = true
+
 [packages]
 pipenvtest = { editable = true, path = "." }
 
